@@ -24,7 +24,7 @@ class SingleLinkedList {
             list.traverseList { print("${it?.value} → ") }
 
             println("\n获得第4个结点的值：${list.getElement(4)?.value}")
-            println("查找第一个大于50的结点：${list.locateElement { it?.value!! > 50 }?.value}")
+            println("查找第一个大于50的结点：${list.locateElement { (it?.value!! as Int) > 50 }?.value}")
 
             print("在第6个节点处插入结点：\n插入后的列表：")
             list.insertElement(Node(666), 6)
@@ -189,7 +189,7 @@ class SingleLinkedList {
     }
 
     data class Node(
-            var value: Int? = null,
+            var value: Any? = null,
             var nextNode: Node? = null
     )
 
