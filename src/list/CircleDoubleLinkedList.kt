@@ -12,26 +12,26 @@ class CircleDoubleLinkedList {
         @JvmStatic
         fun main(args: Array<String>) {
             val list = CircleDoubleLinkedList()
-            // 头插法插入5个元素
-//            for (i in 1..5) list.headInsertCreateList(Node(i))
-//            print("头插法插入元素后的列表（当前表长：${list.length}）")
-//            list.traverseList { print("${it?.value} → ") }
-//
-//            // 尾插法插入5个元素
-//            for (i in 6..10) list.tailInsertCreateList(Node(i))
-//            print("\n尾插法插入元素后的列表（当前表长：${list.length}）")
-//            list.traverseList { print("${it?.value} → ") }
-//
-//            println("\n获得第4个结点的值：${list.getElement(4)?.value}")
-//            println("查找第一个大于5的结点：${list.locateElement { it?.value!! > 5 }?.value}")
-//
-//            print("在第6个节点处插入结点：\n插入后的列表：")
-//            list.insertElement(Node(666), 6)
-//            list.traverseList { print("${it?.value} → ") }
-//
-//            print("\n删除第8个结点：\n删除后的列表：")
-//            list.removeElement(8)
-//            list.traverseList { print("${it?.value} → ") }
+            //头插法插入5个元素
+            for (i in 1..5) list.headInsertCreateList(Node(i))
+            print("头插法插入元素后的列表（当前表长：${list.length}）")
+            list.traverseList { print("${it?.value} → ") }
+
+            // 尾插法插入5个元素
+            for (i in 6..10) list.tailInsertCreateList(Node(i))
+            print("\n尾插法插入元素后的列表（当前表长：${list.length}）")
+            list.traverseList { print("${it?.value} → ") }
+
+            println("\n获得第4个结点的值：${list.getElement(4)?.value}")
+            println("查找第一个大于5的结点：${list.locateElement { it?.value!! > 5 }?.value}")
+
+            print("在第6个节点处插入结点：\n插入后的列表：")
+            list.insertElement(Node(666), 6)
+            list.traverseList { print("${it?.value} → ") }
+
+            print("\n删除第8个结点：\n删除后的列表：")
+            list.removeElement(8)
+            list.traverseList { print("${it?.value} → ") }
 
             for (i in 1..10) list.tailInsertCreateList(Node(i))
             print("头插法插入元素后的列表（当前表长：${list.length}）")
