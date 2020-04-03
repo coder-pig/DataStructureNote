@@ -66,6 +66,11 @@ class LinkStack {
     /* 获取元素个数 */
     fun getSize() = size
 
+    /* 获取栈顶元素的下一个元素 */
+    fun peek(): Node? {
+        return topNode
+    }
+
     data class Node (
         var value: Any? = null,
         var nextNode: Node? = null
